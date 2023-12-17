@@ -1,0 +1,181 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tr {
+    background-color: #f2f2f2;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #333;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #ddd;
+}
+
+table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.relationship-form,
+.marriage-form {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.relationship-form input,
+.marriage-form input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.relationship-form .relationship-button,
+.marriage-form .relationship-button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.relationship-form .relationship-button:hover,
+.marriage-form .relationship-button:hover {
+    background-color: #45a049;
+}
+
+.genealogy-header{
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+.buttonContainer {
+  margin: 1rem 0;
+}
+
+.buttonStyle {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+.delete-person-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 280px;
+    margin: 20px auto;
+  }
+  
+  .delete-person-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .delete-person-button {
+    padding: 10px;
+    background-color: #af4c4c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    box-sizing: border-box;
+  }
+  
+  .delete-person-button:hover {
+    background-color: #e32929;
+  }
+
+
+.delete-marriage-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 280px;
+    margin: 20px auto;
+  }
+  
+  .delete-marriage-input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .delete-marriage-button {
+    padding: 10px;
+    background-color: #af4c4c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .delete-marriage-button:hover {
+    background-color: #e32929;
+  }
+  

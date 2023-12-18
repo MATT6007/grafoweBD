@@ -77,7 +77,6 @@ const Genealogy = () => {
   const handleAddPerson = async () => {
     try {
       const response = await axios.post('https://graphweb-api.onrender.com/genealogy/addPerson', newPerson);
-      console.log(response.data);
       setSuccessMessage('Person added successfully.');
       fetchData();
     } catch (error) {
@@ -89,7 +88,6 @@ const Genealogy = () => {
   const handleAddRelationship = async () => {
     try {
       const response = await axios.post('https://graphweb-api.onrender.com/genealogy/addParentChildRelationship', relationship);
-      console.log(response.data);
       setSuccessMessage('Relationship added successfully.');
       fetchData();
     } catch (error) {
@@ -101,7 +99,6 @@ const Genealogy = () => {
   const handleAddMarriage = async () => {
     try {
       const response = await axios.post('https://graphweb-api.onrender.com/genealogy/addMarriageRelationship', relationship);
-      console.log(response.data);
       setSuccessMessage('Marriage relationship added successfully.');
       fetchData();
     } catch (error) {
@@ -112,8 +109,7 @@ const Genealogy = () => {
 
   const handleDeletePerson = async (personId) => {
     try {
-      const response = await axios.delete(`https://graphweb-api.onrender.com/genealogy/deletePerson/${personId}`);
-      console.log(response.data);
+      const response = await axios.delete(`https://graphweb-api.onrender.com/genealogy/deletePerson/${deletePersonId}`);
       setSuccessMessage('Person deleted successfully.');
       fetchData(); 
     } catch (error) {
@@ -125,7 +121,6 @@ const Genealogy = () => {
   const handleFetchUnmarriedPeople = async () => {
     try {
         const response = await axios.get('https://graphweb-api.onrender.com/genealogy/getUnmarriedPeople');
-        console.log(response.data);
         setPeople(response.data.unmarriedPeople);
         setSuccessMessage('Unmarried people fetched successfully.');
     } catch (error) {
@@ -137,7 +132,6 @@ const Genealogy = () => {
   const handleFetchMarriedPeople = async () => {
     try {
       const response = await axios.get('https://graphweb-api.onrender.com/genealogy/getMarriedPeople');
-      console.log(response);
       setPeople(response.data.marriedPeople);
     } catch (error) {
       console.error('Error fetching married people:', error);
@@ -148,7 +142,6 @@ const Genealogy = () => {
   const handleDeleteMarriage = async () => {
     try {
         const response = await axios.delete(`https://graphweb-api.onrender.com/genealogy/deleteMarriage/${relationship.spouse1Id}/${relationship.spouse2Id}`);
-        console.log(response.data);
         setSuccessMessage('Marriage relationship deleted successfully.');
         fetchData();
     } catch (error) {
